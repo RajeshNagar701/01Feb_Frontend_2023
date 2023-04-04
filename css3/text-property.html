@@ -5,10 +5,14 @@
 <!--
 
  white-space: nowrap; 
+ 
  text-overflow:ellipsis;
+ 
  text-overflow:clip; default
+ 
  word-break: break-all/ default keep-all;
  writing-mode: vertical-rl; 
+ 
 -->
 
 <style> 
@@ -19,40 +23,21 @@ div.test {
   border: 1px solid #000000;
   text-overflow:ellipsis;
 }
-div.test1 {
-  white-space: nowrap; 
+
+div.test:hover{
+	overflow:visible;
+}
+
+.box{
   width: 200px; 
-  overflow: hidden; 
-  border: 1px solid #000000;
-  text-overflow:clip;
-}
-div.test:hover {
-  overflow: visible;
-}
-
-div.test1:hover {
-  overflow: visible;
-}
-
-p.test1 {
-  width: 140px; 
-  border: 1px solid #000000;
-  word-break: keep-all;
-}
-
-p.test2 {
-  width: 140px; 
   border: 1px solid #000000;
   word-break: break-all;
 }
 
 
-
-span.test2 {
-	
-  writing-mode: vertical-rl; 
+.vertical{
+	writing-mode: vertical-rl; 
 }
-
 
 </style>
 </head>
@@ -60,22 +45,11 @@ span.test2 {
 
 <p>Hover over the two divs below, to see the entire text.</p>
 <div class="test" >This is some long text that will not fit in the box</div>
-<br>
-<div class="test1" >This is some long text that will not fit in the box</div>
+<hr>
 
-<br>
-
-<p class="test1"> This paragraph contains a very long word: thisisa hsbvjhav adhashjd. Thegghkkk long word will break and wrap to the next line.</p>
-
-<p class="test2"> This paragraph contains a very long word: thisisa hsbvjhav adhashjd. Thegghhhhhhhhhh long word will break and wrap to the next line.</p>
-
-
-<br>
-
-<p><span class="test2">Raj</span></p>
-
-
-
+<div class="box" >This is some long text that willdffs not fit in the boxThis is some long text that will notfdsf fit in the boxThis is some long text that will not fit in the boxThis is some long text that will not fit in the box</div>
+<hr>
+<h1 class="vertical">Raj Nagar</h1>
 </body>
 </html>
 
